@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro-Display-Bold.ttf">
+            <string>SFProDisplay-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GlobalPlayerStatsView" customModule="PAN689" customModuleProvider="target">
+            <connections>
+                <outlet property="btnAll" destination="Ztq-fj-F3f" id="SID-Fe-3qi"/>
+                <outlet property="lblTitle" destination="voX-Nj-fVi" id="udJ-6u-cDk"/>
+                <outlet property="tbvList" destination="GOy-RA-BcP" id="U1d-7d-83M"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="300"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="J5F-oy-YeI">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="42"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Goals" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="voX-Nj-fVi">
+                            <rect key="frame" x="16" y="10.5" width="47" height="21.5"/>
+                            <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="18"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ztq-fj-F3f">
+                            <rect key="frame" x="73" y="6.5" width="325" height="29"/>
+                            <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="14"/>
+                            <state key="normal" title="View all">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="xibLocKey" value="View all"/>
+                                <userDefinedRuntimeAttribute type="string" keyPath="i18nDefaultTitleKey" value="View all"/>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="onViewAll:" destination="-1" eventType="touchUpInside" id="E7w-c8-hh9"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="voX-Nj-fVi" firstAttribute="centerY" secondItem="J5F-oy-YeI" secondAttribute="centerY" id="EA9-sX-Qh8"/>
+                        <constraint firstItem="voX-Nj-fVi" firstAttribute="leading" secondItem="J5F-oy-YeI" secondAttribute="leading" constant="16" id="erJ-WW-35X"/>
+                        <constraint firstItem="Ztq-fj-F3f" firstAttribute="leading" secondItem="voX-Nj-fVi" secondAttribute="trailing" constant="10" id="fcM-Qo-Qgi"/>
+                        <constraint firstItem="Ztq-fj-F3f" firstAttribute="centerY" secondItem="J5F-oy-YeI" secondAttribute="centerY" id="njZ-A0-7al"/>
+                        <constraint firstAttribute="trailing" secondItem="Ztq-fj-F3f" secondAttribute="trailing" constant="16" id="o7f-lH-hQb"/>
+                        <constraint firstAttribute="height" constant="42" id="y4b-4X-GfH"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="GOy-RA-BcP">
+                    <rect key="frame" x="16" y="42" width="382" height="242"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="16"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="76X-iP-1NA"/>
+                        <outlet property="delegate" destination="-1" id="cUn-xH-0ET"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="GOy-RA-BcP" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="3Vg-sj-M3o"/>
+                <constraint firstItem="J5F-oy-YeI" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="CqV-Vv-rZb"/>
+                <constraint firstItem="J5F-oy-YeI" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="GjX-97-15C"/>
+                <constraint firstItem="GOy-RA-BcP" firstAttribute="top" secondItem="J5F-oy-YeI" secondAttribute="bottom" id="J5P-yW-FtJ"/>
+                <constraint firstItem="J5F-oy-YeI" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="NGY-IE-gHm"/>
+                <constraint firstItem="GOy-RA-BcP" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="UUd-Kj-Emh"/>
+                <constraint firstAttribute="bottom" secondItem="GOy-RA-BcP" secondAttribute="bottom" constant="16" id="nKh-DI-Fqy"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="137.68115942028987" y="71.651785714285708"/>
+        </view>
+    </objects>
+</document>

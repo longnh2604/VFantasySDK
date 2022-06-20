@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro-Display-Bold.ttf">
+            <string>SFProDisplay-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="CustomViewHeaderPlayerList" id="iN0-l3-epB" customClass="CustomViewHeaderPlayerList" customModule="PAN689" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="40"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Name/Club/Position" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dad-BT-eJf">
+                    <rect key="frame" x="27" y="0.0" width="120" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="120" id="Y9H-wD-YC0"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="13"/>
+                    <color key="textColor" red="0.51372549019607838" green="0.48627450980392156" blue="0.52549019607843139" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="WZg-3y-Xbk">
+                    <rect key="frame" x="148" y="0.0" width="223" height="40"/>
+                    <viewLayoutGuide key="safeArea" id="gvX-wa-fk0"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" red="0.92941176470588238" green="0.91764705882352937" blue="0.96470588235294119" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="WZg-3y-Xbk" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="1O4-sx-I7Q"/>
+                <constraint firstItem="Dad-BT-eJf" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="27" id="4SG-c6-Cod"/>
+                <constraint firstItem="Dad-BT-eJf" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="DHc-by-JgH"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="WZg-3y-Xbk" secondAttribute="trailing" constant="4" id="cHu-7N-aWS"/>
+                <constraint firstItem="WZg-3y-Xbk" firstAttribute="leading" secondItem="Dad-BT-eJf" secondAttribute="trailing" constant="1" id="i9f-70-ef7"/>
+                <constraint firstItem="Dad-BT-eJf" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="mZu-Gf-SUs"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="WZg-3y-Xbk" secondAttribute="bottom" id="y4o-ep-8r2"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="stackView" destination="WZg-3y-Xbk" id="YfW-0z-eHY"/>
+                <outlet property="titleLabel" destination="Dad-BT-eJf" id="6mN-Hl-pyZ"/>
+            </connections>
+            <point key="canvasLocation" x="-33.5" y="-208"/>
+        </view>
+    </objects>
+</document>

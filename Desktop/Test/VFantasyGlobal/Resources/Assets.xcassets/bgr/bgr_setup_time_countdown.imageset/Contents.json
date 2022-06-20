@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "filename" : "bgr_setup_time_countdown.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "bgr_setup_time_countdown@2x.png",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "bgr_setup_time_countdown@3x.png",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

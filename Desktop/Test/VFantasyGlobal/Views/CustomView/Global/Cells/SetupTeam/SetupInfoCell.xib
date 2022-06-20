@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro-Display-BlackItalic.ttf">
+            <string>SFProDisplay-BlackItalic</string>
+        </array>
+        <array key="SF-Pro-Display-Bold.ttf">
+            <string>SFProDisplay-Bold</string>
+        </array>
+        <array key="SF-Pro-Display-Regular.ttf">
+            <string>SFProDisplay-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="SetupInfoCell" customModule="PAN689" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="72"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="72"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AqA-3u-dl5">
+                        <rect key="frame" x="23.5" y="0.0" width="273" height="72"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SETUP TEAM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fdk-WX-mzZ">
+                                <rect key="frame" x="0.0" y="0.0" width="127.5" height="24"/>
+                                <fontDescription key="fontDescription" name="SFProDisplay-BlackItalic" family="SF Pro Display" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gameweek 12 deadline" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QpF-du-x9W">
+                                <rect key="frame" x="0.0" y="28" width="137" height="16"/>
+                                <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="13"/>
+                                <color key="textColor" red="0.29019607843137252" green="0.29019607843137252" blue="0.29019607843137252" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="13/4/2018  9:00AM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Gf-7p-knA">
+                                <rect key="frame" x="155" y="27.5" width="118" height="17"/>
+                                <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="14"/>
+                                <color key="textColor" red="0.51372549019607838" green="0.48627450980392156" blue="0.52549019607843139" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="fdk-WX-mzZ" firstAttribute="leading" secondItem="AqA-3u-dl5" secondAttribute="leading" id="IwT-O5-jnX"/>
+                            <constraint firstItem="QpF-du-x9W" firstAttribute="leading" secondItem="AqA-3u-dl5" secondAttribute="leading" id="Kwv-M6-vqC"/>
+                            <constraint firstItem="QpF-du-x9W" firstAttribute="centerY" secondItem="AqA-3u-dl5" secondAttribute="centerY" id="TY8-B7-Qxc"/>
+                            <constraint firstItem="0Gf-7p-knA" firstAttribute="centerY" secondItem="AqA-3u-dl5" secondAttribute="centerY" id="a3g-hQ-tgY"/>
+                            <constraint firstItem="fdk-WX-mzZ" firstAttribute="top" secondItem="AqA-3u-dl5" secondAttribute="top" id="nhv-K7-vRc"/>
+                            <constraint firstAttribute="trailing" secondItem="0Gf-7p-knA" secondAttribute="trailing" id="zj8-aM-iyp"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="AqA-3u-dl5" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="74t-wz-Npj"/>
+                    <constraint firstItem="AqA-3u-dl5" firstAttribute="height" secondItem="H2p-sc-9uM" secondAttribute="height" id="LWa-Vg-k0M"/>
+                    <constraint firstItem="AqA-3u-dl5" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="273/320" id="Phg-zd-Wu2"/>
+                    <constraint firstItem="AqA-3u-dl5" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="sB2-g6-DQD"/>
+                </constraints>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="132" y="98"/>
+        </tableViewCell>
+    </objects>
+</document>

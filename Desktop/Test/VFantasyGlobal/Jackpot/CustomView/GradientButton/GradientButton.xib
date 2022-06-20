@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro-Display-Black.ttf">
+            <string>SFProDisplay-Black</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GradientButton" customModule="PAN689" customModuleProvider="target">
+            <connections>
+                <outlet property="gradientView" destination="mmD-mr-RvZ" id="wbE-19-BAY"/>
+                <outlet property="signInButton" destination="5F9-kc-VFI" id="D6h-d1-BFX"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="nft-z2-lur">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="now-a1-St0">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mmD-mr-RvZ" customClass="GradientView" customModule="PAN689" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="8"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5F9-kc-VFI">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="fontDescription" name="SFProDisplay-Black" family="SF Pro Display" pointSize="16"/>
+                            <state key="normal">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="onAction:" destination="-1" eventType="touchUpInside" id="UPf-m9-Ntw"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="5F9-kc-VFI" firstAttribute="centerX" secondItem="mmD-mr-RvZ" secondAttribute="centerX" id="07e-B6-Blu"/>
+                        <constraint firstItem="mmD-mr-RvZ" firstAttribute="centerX" secondItem="now-a1-St0" secondAttribute="centerX" id="1KG-ie-rDB"/>
+                        <constraint firstItem="mmD-mr-RvZ" firstAttribute="centerY" secondItem="now-a1-St0" secondAttribute="centerY" id="1PY-Vo-O8b"/>
+                        <constraint firstItem="5F9-kc-VFI" firstAttribute="top" secondItem="mmD-mr-RvZ" secondAttribute="top" id="U9K-dK-9go"/>
+                        <constraint firstItem="5F9-kc-VFI" firstAttribute="leading" secondItem="mmD-mr-RvZ" secondAttribute="leading" id="W2S-eU-8KB"/>
+                        <constraint firstItem="mmD-mr-RvZ" firstAttribute="top" secondItem="now-a1-St0" secondAttribute="top" id="iyQ-xC-6XY"/>
+                        <constraint firstItem="mmD-mr-RvZ" firstAttribute="leading" secondItem="now-a1-St0" secondAttribute="leading" id="k9O-po-ssb"/>
+                        <constraint firstItem="5F9-kc-VFI" firstAttribute="centerY" secondItem="mmD-mr-RvZ" secondAttribute="centerY" id="tJ9-ZZ-EyU"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="now-a1-St0" secondAttribute="bottom" id="WKb-BN-3aW"/>
+                <constraint firstItem="now-a1-St0" firstAttribute="centerX" secondItem="nft-z2-lur" secondAttribute="centerX" id="flv-Cs-9Zk"/>
+                <constraint firstItem="now-a1-St0" firstAttribute="top" secondItem="nft-z2-lur" secondAttribute="top" id="j0w-D7-Nbw"/>
+                <constraint firstItem="now-a1-St0" firstAttribute="leading" secondItem="nft-z2-lur" secondAttribute="leading" id="rAo-9N-n9E"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="137.68115942028987" y="226.33928571428569"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

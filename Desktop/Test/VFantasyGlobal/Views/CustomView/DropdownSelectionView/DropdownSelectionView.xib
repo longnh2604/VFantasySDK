@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro-Display-Black.ttf">
+            <string>SFProDisplay-Black</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DropdownSelectionView" customModule="PAN689" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="iN0-l3-epB" id="jWW-BK-0NN"/>
+                <outlet property="dropdownButton" destination="b74-fg-J0r" id="k0w-mg-9Hd"/>
+                <outlet property="imageBackground" destination="hKH-ZC-Anf" id="biv-6d-TYx"/>
+                <outlet property="titleLabel" destination="wif-qy-6ft" id="W8d-a2-oMW"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clipsSubviews="YES" contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="74"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hKH-ZC-Anf">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="74"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wif-qy-6ft">
+                    <rect key="frame" x="8" y="8" width="334" height="58"/>
+                    <fontDescription key="fontDescription" name="SFProDisplay-Black" family="SF Pro Display" pointSize="14"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b74-fg-J0r">
+                    <rect key="frame" x="342" y="22" width="30" height="30"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="4lL-fX-HJk"/>
+                        <constraint firstAttribute="width" secondItem="b74-fg-J0r" secondAttribute="height" multiplier="1:1" id="QjA-Gs-6Iy"/>
+                    </constraints>
+                    <state key="normal" image="ic_ArrowDropDownBlack"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="15"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="b74-fg-J0r" secondAttribute="trailing" constant="3" id="4gJ-ch-AYu"/>
+                <constraint firstItem="wif-qy-6ft" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="8" id="C4Y-mK-mVx"/>
+                <constraint firstItem="hKH-ZC-Anf" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="FYd-v5-nLR"/>
+                <constraint firstAttribute="bottom" secondItem="hKH-ZC-Anf" secondAttribute="bottom" id="Iks-0J-B6H"/>
+                <constraint firstItem="hKH-ZC-Anf" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="QKu-Rm-o4N"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="wif-qy-6ft" secondAttribute="bottom" priority="999" constant="8" id="a3w-CC-Duq"/>
+                <constraint firstItem="wif-qy-6ft" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="8" id="bxT-aY-3Sg"/>
+                <constraint firstItem="b74-fg-J0r" firstAttribute="leading" secondItem="wif-qy-6ft" secondAttribute="trailing" id="eWx-tp-i8L"/>
+                <constraint firstItem="b74-fg-J0r" firstAttribute="centerY" secondItem="wif-qy-6ft" secondAttribute="centerY" id="sNT-xS-wgD"/>
+                <constraint firstAttribute="trailing" secondItem="hKH-ZC-Anf" secondAttribute="trailing" id="tQQ-gU-8DT"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                    <real key="value" value="20"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <point key="canvasLocation" x="23.199999999999999" y="-245.57721139430288"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_ArrowDropDownBlack" width="10" height="5"/>
+    </resources>
+</document>

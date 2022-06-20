@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>UIAppFonts</key>
+	<array>
+		<string>SF-Pro-Display-Regular.ttf</string>
+		<string>SF-Pro-Display-Heavy.ttf</string>
+		<string>SF-Pro-Display-Bold.ttf</string>
+		<string>SF-Pro-Display-Black.ttf</string>
+		<string>SF-Pro-Display-HeavyItalic.ttf</string>
+		<string>SF-Pro-Display-RegularItalic.ttf</string>
+		<string>SF-Pro-Display-BlackItalic.ttf</string>
+	</array>
+	<key>UIViewControllerBasedStatusBarAppearance</key>
+	<false/>
+</dict>
+</plist>

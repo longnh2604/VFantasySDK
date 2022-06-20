@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro-Display-HeavyItalic.ttf">
+            <string>SFProDisplay-HeavyItalic</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GlobaNavigationBar" customModule="VFantasyGlobal" customModuleProvider="target">
+            <connections>
+                <outlet property="btnLeft" destination="17a-Gn-3mo" id="o1H-Tc-STZ"/>
+                <outlet property="ivAvatar" destination="pgo-UD-cd7" id="Kq2-iQ-zMt"/>
+                <outlet property="lblHeader" destination="7tA-fw-Jej" id="mbr-zd-Vtf"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="88"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4eg-m0-RpA">
+                    <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="17a-Gn-3mo">
+                            <rect key="frame" x="10" y="0.0" width="44" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="17a-Gn-3mo" secondAttribute="height" id="PAk-qH-2qu"/>
+                            </constraints>
+                            <state key="normal" image="global_ic_back"/>
+                            <connections>
+                                <action selector="onBack:" destination="-1" eventType="touchUpInside" id="Lya-e0-ZOM"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PLAYERS STATS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7tA-fw-Jej">
+                            <rect key="frame" x="58" y="7.5" width="298" height="29"/>
+                            <fontDescription key="fontDescription" name="SFProDisplay-HeavyItalic" family="SF Pro Display" pointSize="24"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pgo-UD-cd7">
+                            <rect key="frame" x="366" y="6" width="32" height="32"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="32" id="6La-3p-inf"/>
+                                <constraint firstAttribute="width" secondItem="pgo-UD-cd7" secondAttribute="height" id="kdx-eO-BRX"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="circleCorner" value="YES"/>
+                            </userDefinedRuntimeAttributes>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="7tA-fw-Jej" firstAttribute="leading" secondItem="17a-Gn-3mo" secondAttribute="trailing" constant="4" id="4bl-QH-9fO"/>
+                        <constraint firstItem="17a-Gn-3mo" firstAttribute="centerY" secondItem="4eg-m0-RpA" secondAttribute="centerY" id="7by-3b-dmp"/>
+                        <constraint firstItem="7tA-fw-Jej" firstAttribute="centerY" secondItem="4eg-m0-RpA" secondAttribute="centerY" id="BuZ-cI-ynz"/>
+                        <constraint firstAttribute="trailing" secondItem="pgo-UD-cd7" secondAttribute="trailing" constant="16" id="WgE-Fl-xmS"/>
+                        <constraint firstItem="17a-Gn-3mo" firstAttribute="top" secondItem="4eg-m0-RpA" secondAttribute="top" id="YcS-Je-ku4"/>
+                        <constraint firstItem="7tA-fw-Jej" firstAttribute="centerX" secondItem="4eg-m0-RpA" secondAttribute="centerX" id="d8F-Aw-8tU"/>
+                        <constraint firstItem="17a-Gn-3mo" firstAttribute="leading" secondItem="4eg-m0-RpA" secondAttribute="leading" constant="10" id="mUh-Ct-WTa"/>
+                        <constraint firstItem="pgo-UD-cd7" firstAttribute="centerY" secondItem="7tA-fw-Jej" secondAttribute="centerY" id="qu5-Rx-lru"/>
+                        <constraint firstAttribute="height" constant="44" id="rPH-9y-WOl"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="4eg-m0-RpA" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="ECe-wZ-A18"/>
+                <constraint firstAttribute="bottom" secondItem="4eg-m0-RpA" secondAttribute="bottom" id="Z9X-pg-339"/>
+                <constraint firstItem="4eg-m0-RpA" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="hTb-8r-w1h"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="139" y="72"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="global_ic_back" width="24" height="24"/>
+    </resources>
+</document>

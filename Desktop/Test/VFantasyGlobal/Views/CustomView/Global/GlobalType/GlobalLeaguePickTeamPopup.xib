@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro-Display-Bold.ttf">
+            <string>SFProDisplay-Bold</string>
+        </array>
+        <array key="SF-Pro-Display-Regular.ttf">
+            <string>SFProDisplay-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GlobalLeaguePickTeamPopup" customModule="VFantasyGlobal" customModuleProvider="target">
+            <connections>
+                <outlet property="btnAction" destination="u5w-cK-8lL" id="eFM-XC-Jj5"/>
+                <outlet property="contentImageView" destination="cMG-Sy-cZ3" id="rYU-Ix-8iw"/>
+                <outlet property="contentView" destination="iN0-l3-epB" id="6SG-mW-r7V"/>
+                <outlet property="lblNote" destination="8SO-GB-dDR" id="FMB-NY-ZWC"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="529"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="A01I3338" translatesAutoresizingMaskIntoConstraints="NO" id="cMG-Sy-cZ3">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="310.5"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="cMG-Sy-cZ3" secondAttribute="height" multiplier="4:3" id="y0f-4V-9bi"/>
+                    </constraints>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RSd-ot-NLh">
+                    <rect key="frame" x="0.0" y="310.5" width="414" height="218.5"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3pB-t7-Gyb">
+                            <rect key="frame" x="0.0" y="55" width="414" height="108.5"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You have not yet set up your team in the Global ranking. Please create a team first." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8SO-GB-dDR">
+                                    <rect key="frame" x="30" y="0.0" width="354" height="33.5"/>
+                                    <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="14"/>
+                                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u5w-cK-8lL">
+                                    <rect key="frame" x="124.5" y="58.5" width="165" height="50"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="50" id="1eJ-J8-4Su"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="14"/>
+                                    <state key="normal" title="Pick players" backgroundImage="ic_button_background">
+                                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="xibLocKey" value="Pick players"/>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="i18nDefaultTitleKey" value="Pick players"/>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="onCreate:" destination="-1" eventType="touchUpInside" id="Tef-fj-tuF"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="8SO-GB-dDR" firstAttribute="top" secondItem="3pB-t7-Gyb" secondAttribute="top" id="EoW-hA-UI5"/>
+                                <constraint firstItem="8SO-GB-dDR" firstAttribute="leading" secondItem="3pB-t7-Gyb" secondAttribute="leading" constant="30" id="Xb4-Cu-Ia8"/>
+                                <constraint firstAttribute="bottom" secondItem="u5w-cK-8lL" secondAttribute="bottom" id="dBL-V7-uhe"/>
+                                <constraint firstItem="u5w-cK-8lL" firstAttribute="top" secondItem="8SO-GB-dDR" secondAttribute="bottom" constant="25" id="qc9-c2-G2C"/>
+                                <constraint firstItem="u5w-cK-8lL" firstAttribute="centerX" secondItem="3pB-t7-Gyb" secondAttribute="centerX" id="uZA-vG-ORg"/>
+                                <constraint firstItem="8SO-GB-dDR" firstAttribute="centerX" secondItem="3pB-t7-Gyb" secondAttribute="centerX" id="yqA-Sv-J7h"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="3pB-t7-Gyb" firstAttribute="leading" secondItem="RSd-ot-NLh" secondAttribute="leading" id="FpL-YT-IGA"/>
+                        <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="3pB-t7-Gyb" secondAttribute="bottom" constant="10" id="U2L-Zr-fIj"/>
+                        <constraint firstItem="3pB-t7-Gyb" firstAttribute="centerY" secondItem="RSd-ot-NLh" secondAttribute="centerY" id="oaF-HR-Iqr"/>
+                        <constraint firstItem="3pB-t7-Gyb" firstAttribute="centerX" secondItem="RSd-ot-NLh" secondAttribute="centerX" id="yHx-0d-ULu"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="RSd-ot-NLh" secondAttribute="bottom" id="1OP-Cu-7At"/>
+                <constraint firstItem="RSd-ot-NLh" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="5aZ-ae-ox6"/>
+                <constraint firstItem="RSd-ot-NLh" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Mtp-AX-Zcw"/>
+                <constraint firstItem="cMG-Sy-cZ3" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Ny2-3c-306"/>
+                <constraint firstItem="cMG-Sy-cZ3" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="YXH-Di-d9m"/>
+                <constraint firstItem="RSd-ot-NLh" firstAttribute="top" secondItem="cMG-Sy-cZ3" secondAttribute="bottom" id="Yic-I4-Ikb"/>
+                <constraint firstAttribute="trailing" secondItem="cMG-Sy-cZ3" secondAttribute="trailing" id="rmF-OW-dW8"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="137.68115942028987" y="221.98660714285714"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="A01I3338" width="3000" height="1871"/>
+        <image name="ic_button_background" width="165" height="50"/>
+    </resources>
+</document>

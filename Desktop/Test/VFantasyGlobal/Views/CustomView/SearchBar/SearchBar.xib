@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro-Display-Regular.ttf">
+            <string>SFProDisplay-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SearchBar" customModule="PAN689" customModuleProvider="target">
+            <connections>
+                <outlet property="ivSearch" destination="fEp-Ju-40K" id="MlH-m5-58E"/>
+                <outlet property="tfSearch" destination="tci-Hu-SkN" id="5uG-Bl-9zn"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="32"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OUq-CG-qR1">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="32"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="global_searchbar_ic_search" translatesAutoresizingMaskIntoConstraints="NO" id="fEp-Ju-40K">
+                            <rect key="frame" x="8" y="4" width="24" height="24"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="24" id="P4L-4z-ggG"/>
+                                <constraint firstAttribute="width" secondItem="fEp-Ju-40K" secondAttribute="height" id="go9-h9-179"/>
+                            </constraints>
+                        </imageView>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="tci-Hu-SkN">
+                            <rect key="frame" x="40" y="7" width="366" height="18"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="search" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
+                            <connections>
+                                <action selector="onTextChanged:" destination="-1" eventType="editingChanged" id="6cl-Qh-sPM"/>
+                                <outlet property="delegate" destination="-1" id="KQx-Qf-6Eo"/>
+                            </connections>
+                        </textField>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="fEp-Ju-40K" firstAttribute="centerY" secondItem="OUq-CG-qR1" secondAttribute="centerY" id="DWH-82-hCZ"/>
+                        <constraint firstItem="tci-Hu-SkN" firstAttribute="leading" secondItem="fEp-Ju-40K" secondAttribute="trailing" constant="8" id="U1G-99-kQu"/>
+                        <constraint firstAttribute="trailing" secondItem="tci-Hu-SkN" secondAttribute="trailing" constant="8" id="ggh-mT-t6j"/>
+                        <constraint firstItem="fEp-Ju-40K" firstAttribute="leading" secondItem="OUq-CG-qR1" secondAttribute="leading" constant="8" id="mXT-cw-KrE"/>
+                        <constraint firstItem="tci-Hu-SkN" firstAttribute="centerY" secondItem="fEp-Ju-40K" secondAttribute="centerY" id="wqV-rO-fnv"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="8"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="OUq-CG-qR1" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="910-c6-6L9"/>
+                <constraint firstItem="OUq-CG-qR1" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="9aj-lJ-wGv"/>
+                <constraint firstItem="OUq-CG-qR1" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Va6-Le-OU8"/>
+                <constraint firstItem="OUq-CG-qR1" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="Yn6-qj-dZy"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="139" y="95"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="global_searchbar_ic_search" width="24" height="24"/>
+    </resources>
+</document>

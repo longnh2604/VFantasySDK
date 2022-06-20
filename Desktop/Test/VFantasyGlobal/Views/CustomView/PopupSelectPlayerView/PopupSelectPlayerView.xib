@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro-Display-Bold.ttf">
+            <string>SFProDisplay-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PopupSelectPlayerView" customModule="PAN689" customModuleProvider="target">
+            <connections>
+                <outlet property="blurView" destination="jib-CS-6wt" id="7KE-qZ-D40"/>
+                <outlet property="contentToBottomLayout" destination="L7Q-Eh-tN1" id="rNf-cJ-BNg"/>
+                <outlet property="playersView" destination="F96-A1-JWo" id="9cp-qw-iat"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jib-CS-6wt" customClass="GradientView" customModule="PAN689" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h1V-uJ-ofH">
+                    <rect key="frame" x="0.0" y="896" width="414" height="230"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PB1-SO-caA">
+                            <rect key="frame" x="28" y="0.0" width="358" height="157"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select a player" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UtS-px-Wjt">
+                                    <rect key="frame" x="135.5" y="12" width="87" height="16"/>
+                                    <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="13"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F96-A1-JWo" customClass="PlayersBottomView" customModule="PAN689" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="38" width="358" height="119"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            <constraints>
+                                <constraint firstItem="F96-A1-JWo" firstAttribute="top" secondItem="UtS-px-Wjt" secondAttribute="bottom" constant="10" id="89h-SS-hpw"/>
+                                <constraint firstItem="F96-A1-JWo" firstAttribute="leading" secondItem="PB1-SO-caA" secondAttribute="leading" id="Es9-8Z-fcz"/>
+                                <constraint firstAttribute="bottom" secondItem="F96-A1-JWo" secondAttribute="bottom" id="a2N-eH-szn"/>
+                                <constraint firstItem="F96-A1-JWo" firstAttribute="centerX" secondItem="PB1-SO-caA" secondAttribute="centerX" id="maf-BT-XUE"/>
+                                <constraint firstItem="UtS-px-Wjt" firstAttribute="top" secondItem="PB1-SO-caA" secondAttribute="top" constant="12" id="oZY-Zm-CZ1"/>
+                                <constraint firstItem="UtS-px-Wjt" firstAttribute="centerX" secondItem="PB1-SO-caA" secondAttribute="centerX" id="zW6-PM-jCA"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="20"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Cn-w3-k9l">
+                            <rect key="frame" x="28" y="170" width="358" height="40"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="7Ex-dH-IVV"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="17"/>
+                            <state key="normal" title="CANCEL"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="20"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="onCancel:" destination="-1" eventType="touchUpInside" id="gIM-bF-zi9"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="PB1-SO-caA" firstAttribute="centerX" secondItem="h1V-uJ-ofH" secondAttribute="centerX" id="2wd-9j-IRC"/>
+                        <constraint firstItem="PB1-SO-caA" firstAttribute="top" secondItem="h1V-uJ-ofH" secondAttribute="top" id="6fU-Jt-QgX"/>
+                        <constraint firstItem="8Cn-w3-k9l" firstAttribute="top" secondItem="PB1-SO-caA" secondAttribute="bottom" constant="13" id="7KP-AV-kYc"/>
+                        <constraint firstItem="PB1-SO-caA" firstAttribute="leading" secondItem="8Cn-w3-k9l" secondAttribute="leading" id="8XG-T7-4BU"/>
+                        <constraint firstItem="8Cn-w3-k9l" firstAttribute="centerX" secondItem="h1V-uJ-ofH" secondAttribute="centerX" id="UV9-DX-YWp"/>
+                        <constraint firstAttribute="height" constant="230" id="Von-9R-1aH"/>
+                        <constraint firstItem="8Cn-w3-k9l" firstAttribute="leading" secondItem="h1V-uJ-ofH" secondAttribute="leading" constant="28" id="aaE-pf-xGQ"/>
+                        <constraint firstAttribute="bottom" secondItem="8Cn-w3-k9l" secondAttribute="bottom" constant="20" id="ped-6E-as9"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="jib-CS-6wt" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="0bd-Bp-ytl"/>
+                <constraint firstItem="jib-CS-6wt" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="7tJ-Zv-YTy"/>
+                <constraint firstItem="jib-CS-6wt" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="919-sx-ryN"/>
+                <constraint firstItem="h1V-uJ-ofH" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="B5J-1J-kLS"/>
+                <constraint firstItem="h1V-uJ-ofH" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="FQy-nN-8IC"/>
+                <constraint firstAttribute="bottom" secondItem="h1V-uJ-ofH" secondAttribute="bottom" constant="-230" id="L7Q-Eh-tN1"/>
+                <constraint firstItem="jib-CS-6wt" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="nbN-Ap-8cw"/>
+            </constraints>
+            <point key="canvasLocation" x="73.913043478260875" y="62.946428571428569"/>
+        </view>
+    </objects>
+</document>

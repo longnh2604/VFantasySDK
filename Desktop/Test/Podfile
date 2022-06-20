@@ -1,0 +1,29 @@
+platform :ios, '11.0'
+use_frameworks!
+
+source 'https://github.com/CocoaPods/Specs.git'
+source 'https://github.com/longnh2604/VFantasySDK.git'
+
+def shared_pods
+  
+  pod 'SwiftDate'
+  pod 'MZFormSheetPresentationController'
+  pod 'SDWebImage'
+  pod 'Alamofire'
+  pod 'MBProgressHUD'
+  pod 'PureLayout'
+  pod 'HMSegmentedControl'
+  pod 'ALCameraViewController'
+  pod 'SMPageControl'
+  
+end
+
+target 'VFantasyGlobal' do
+    shared_pods
+end
+
+target 'VFantasyJackpot' do
+    shared_pods
+end
+
+

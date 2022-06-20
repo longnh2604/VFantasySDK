@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro-Display-Bold.ttf">
+            <string>SFProDisplay-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="Super7DreamPlayerCell" customModule="PAN689" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="171" height="64"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="171" height="64"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yHD-G1-17g">
+                        <rect key="frame" x="0.0" y="0.0" width="171" height="64"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_super7_avatar_default" translatesAutoresizingMaskIntoConstraints="NO" id="1r6-77-apU">
+                                <rect key="frame" x="16" y="12" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="1r6-77-apU" secondAttribute="height" id="hAM-Pl-YQB"/>
+                                    <constraint firstAttribute="width" constant="40" id="pyA-dS-oJh"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="circleCorner" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_super7_star_black" translatesAutoresizingMaskIntoConstraints="NO" id="eHf-Dm-pHU">
+                                <rect key="frame" x="40" y="36" width="16" height="16"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="16" id="P3w-V7-vgt"/>
+                                    <constraint firstAttribute="width" secondItem="eHf-Dm-pHU" secondAttribute="height" id="age-Ih-SOp"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="circleCorner" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="AHF-oI-XE7">
+                                <rect key="frame" x="64" y="13" width="53" height="38"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="N. Q. Hải" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MaI-Fq-PBY">
+                                        <rect key="frame" x="0.0" y="0.0" width="53" height="17"/>
+                                        <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="14"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="80" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l7u-m2-nSe">
+                                        <rect key="frame" x="0.0" y="21" width="53" height="17"/>
+                                        <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="14"/>
+                                        <color key="textColor" red="0.97254901959999995" green="0.44705882349999998" blue="0.12941176469999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="eHf-Dm-pHU" firstAttribute="trailing" secondItem="1r6-77-apU" secondAttribute="trailing" id="13J-30-J5Y"/>
+                            <constraint firstItem="1r6-77-apU" firstAttribute="centerY" secondItem="yHD-G1-17g" secondAttribute="centerY" id="VeX-8Y-I3k"/>
+                            <constraint firstItem="eHf-Dm-pHU" firstAttribute="bottom" secondItem="1r6-77-apU" secondAttribute="bottom" id="b7F-Os-94m"/>
+                            <constraint firstItem="AHF-oI-XE7" firstAttribute="centerY" secondItem="yHD-G1-17g" secondAttribute="centerY" id="hVJ-Bb-ecb"/>
+                            <constraint firstItem="AHF-oI-XE7" firstAttribute="leading" secondItem="1r6-77-apU" secondAttribute="trailing" constant="8" id="v4u-oc-38I"/>
+                            <constraint firstItem="1r6-77-apU" firstAttribute="leading" secondItem="yHD-G1-17g" secondAttribute="leading" constant="16" id="wME-qq-cit"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="MaI-Fq-PBY" secondAttribute="trailing" constant="2" id="zOO-ZT-dWc"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="yHD-G1-17g" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="2WB-v3-Tpg"/>
+                <constraint firstItem="yHD-G1-17g" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="IfL-aX-5vR"/>
+                <constraint firstItem="yHD-G1-17g" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="VqO-X6-0xb"/>
+                <constraint firstItem="yHD-G1-17g" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="tzE-Be-oh7"/>
+            </constraints>
+            <connections>
+                <outlet property="ivAvatar" destination="1r6-77-apU" id="vaz-EM-PrL"/>
+                <outlet property="ivStar" destination="eHf-Dm-pHU" id="qqo-cU-obL"/>
+                <outlet property="lblName" destination="MaI-Fq-PBY" id="YvE-gW-Oc2"/>
+                <outlet property="lblScore" destination="l7u-m2-nSe" id="orU-Jo-sLc"/>
+            </connections>
+            <point key="canvasLocation" x="0.7246376811594204" y="59.598214285714285"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="ic_super7_avatar_default" width="40" height="40"/>
+        <image name="ic_super7_star_black" width="16" height="16"/>
+    </resources>
+</document>

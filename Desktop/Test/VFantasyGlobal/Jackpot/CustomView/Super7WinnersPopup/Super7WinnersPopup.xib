@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro-Display-Bold.ttf">
+            <string>SFProDisplay-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="Super7WinnersPopup" customModule="VFantasyJackpot" customModuleProvider="target">
+            <connections>
+                <outlet property="lblTitle" destination="gLf-3K-kCB" id="2Q0-dK-SMx"/>
+                <outlet property="tbvList" destination="Bjs-JA-tHN" id="7oC-mj-mlc"/>
+                <outlet property="tbvListHeightConstant" destination="thC-go-f87" id="zBf-Ml-yhc"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="400"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fex-pY-nLs">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="205.5"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Claim the prize" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gLf-3K-kCB">
+                            <rect key="frame" x="16" y="24" width="382" height="21.5"/>
+                            <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="18"/>
+                            <color key="textColor" red="0.11764705882352941" green="0.14509803921568626" blue="0.22352941176470587" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="xibLocKey" value="Claim the prize"/>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" contentViewInsetsToSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bjs-JA-tHN">
+                            <rect key="frame" x="16" y="61.5" width="382" height="144"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="144" id="thC-go-f87"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="16"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <outlet property="dataSource" destination="-1" id="DYw-oC-A3i"/>
+                                <outlet property="delegate" destination="-1" id="bks-aW-a8H"/>
+                            </connections>
+                        </tableView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="gLf-3K-kCB" firstAttribute="leading" secondItem="Fex-pY-nLs" secondAttribute="leading" constant="16" id="BYR-nV-Ydw"/>
+                        <constraint firstItem="Bjs-JA-tHN" firstAttribute="leading" secondItem="gLf-3K-kCB" secondAttribute="leading" id="HrS-CK-Fi8"/>
+                        <constraint firstItem="Bjs-JA-tHN" firstAttribute="centerX" secondItem="gLf-3K-kCB" secondAttribute="centerX" id="O3L-gT-ttA"/>
+                        <constraint firstAttribute="bottom" secondItem="Bjs-JA-tHN" secondAttribute="bottom" id="SBL-zJ-WEh"/>
+                        <constraint firstItem="gLf-3K-kCB" firstAttribute="top" secondItem="Fex-pY-nLs" secondAttribute="top" constant="24" id="hqj-vN-qQe"/>
+                        <constraint firstItem="Bjs-JA-tHN" firstAttribute="top" secondItem="gLf-3K-kCB" secondAttribute="bottom" constant="16" id="tRF-Jv-z3C"/>
+                        <constraint firstItem="gLf-3K-kCB" firstAttribute="centerX" secondItem="Fex-pY-nLs" secondAttribute="centerX" id="ydG-6n-exX"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="Fex-pY-nLs" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="A2E-ba-bgw"/>
+                <constraint firstItem="Fex-pY-nLs" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="ffq-w2-Odb"/>
+                <constraint firstItem="Fex-pY-nLs" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="jG4-wd-A1j"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="131.8840579710145" y="145.98214285714286"/>
+        </view>
+    </objects>
+</document>

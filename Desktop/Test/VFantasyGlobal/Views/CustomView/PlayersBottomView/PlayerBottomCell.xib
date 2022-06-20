@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PlayerBottomCell" id="gTV-IL-0wX" customClass="PlayerBottomCell" customModule="PAN689" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="50" height="100"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="50" height="100"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WzZ-H6-uEM" customClass="PlayerView" customModule="PAN689" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="50" height="100"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="WzZ-H6-uEM" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="3EH-ea-SA8"/>
+                <constraint firstItem="WzZ-H6-uEM" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="7By-iB-FPi"/>
+                <constraint firstItem="WzZ-H6-uEM" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="ncD-9r-mci"/>
+                <constraint firstItem="WzZ-H6-uEM" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="tTK-FV-Vaw"/>
+            </constraints>
+            <connections>
+                <outlet property="playerView" destination="WzZ-H6-uEM" id="j5z-jq-WKo"/>
+            </connections>
+            <point key="canvasLocation" x="139" y="133"/>
+        </collectionViewCell>
+    </objects>
+</document>

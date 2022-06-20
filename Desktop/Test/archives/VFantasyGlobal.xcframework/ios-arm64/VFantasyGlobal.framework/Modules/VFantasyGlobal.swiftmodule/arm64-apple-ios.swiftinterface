@@ -1,0 +1,63 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.5.1 (swiftlang-1300.0.31.4 clang-1300.0.29.6)
+// swift-module-flags: -target arm64-apple-ios11.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name VFantasyGlobal
+import ALCameraViewController
+import Alamofire
+import AudioToolbox
+import Foundation
+import HMSegmentedControl
+import MBProgressHUD
+import MZFormSheetPresentationController
+import ObjectiveC
+import Photos
+import PureLayout
+import SDWebImage
+import SMPageControl
+import Swift
+import SwiftDate
+import UIKit
+@_exported import VFantasyGlobal
+import _Concurrency
+@IBDesignable extension UIKit.UIView {
+  public typealias Configuration = (UIKit.UIView) -> Swift.Void
+}
+extension UIKit.UIColor {
+  convenience public init(red: Swift.Int, green: Swift.Int, blue: Swift.Int, transparency: CoreGraphics.CGFloat = 1)
+}
+extension Swift.Array where Element : Swift.Equatable {
+  public mutating func removeAll(_ item: Element)
+  public mutating func shuffle()
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class VFantasyManager : ObjectiveC.NSObject {
+  public static let shared: VFantasyGlobal.VFantasyManager
+  public func getToken() -> Swift.String
+  public func getUserId() -> Swift.Int
+  public func updateToken(_ token: Swift.String)
+  public func changeLanguage(_ language: VFantasyGlobal.Languages)
+  @objc deinit
+}
+extension VFantasyGlobal.VFantasyManager {
+  public func showGlobalView()
+}
+extension Swift.String : Alamofire.ParameterEncoding {
+  public func encode(_ urlRequest: Alamofire.URLRequestConvertible, with parameters: Alamofire.Parameters?) throws -> Foundation.URLRequest
+}
+extension UIKit.UIBarButtonItem {
+  @_Concurrency.MainActor(unsafe) convenience public init<T>(image: UIKit.UIImage?, landscapeImagePhone: UIKit.UIImage? = nil, style: UIKit.UIBarButtonItem.Style = .plain, action: @escaping (T) -> Swift.Void) where T : UIKit.UIBarButtonItem
+  @_Concurrency.MainActor(unsafe) convenience public init(image: UIKit.UIImage?, landscapeImagePhone: UIKit.UIImage? = nil, style: UIKit.UIBarButtonItem.Style = .plain, action: @escaping () -> Swift.Void)
+  @_Concurrency.MainActor(unsafe) convenience public init<T>(title: Swift.String?, style: UIKit.UIBarButtonItem.Style = .plain, action: @escaping (T) -> Swift.Void) where T : UIKit.UIBarButtonItem
+  @_Concurrency.MainActor(unsafe) convenience public init(title: Swift.String?, style: UIKit.UIBarButtonItem.Style = .plain, action: @escaping () -> Swift.Void)
+  @_Concurrency.MainActor(unsafe) convenience public init<T>(barButtonSystemItem systemItem: UIKit.UIBarButtonItem.SystemItem, action: @escaping (T) -> Swift.Void) where T : UIKit.UIBarButtonItem
+  @_Concurrency.MainActor(unsafe) convenience public init(barButtonSystemItem systemItem: UIKit.UIBarButtonItem.SystemItem, action: @escaping () -> Swift.Void)
+}
+public enum Languages : Swift.String {
+  case en, vi
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+extension VFantasyGlobal.Languages : Swift.Equatable {}
+extension VFantasyGlobal.Languages : Swift.Hashable {}
+extension VFantasyGlobal.Languages : Swift.RawRepresentable {}

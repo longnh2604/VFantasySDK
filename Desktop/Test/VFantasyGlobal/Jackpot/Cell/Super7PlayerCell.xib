@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro-Display-Bold.ttf">
+            <string>SFProDisplay-Bold</string>
+        </array>
+        <array key="SF-Pro-Display-Regular.ttf">
+            <string>SFProDisplay-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Super7PlayerCell" id="KGk-i7-Jjw" customClass="Super7PlayerCell" customModule="PAN689" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="72"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="72"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Ks-Cd-INU">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="71"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="newGlobal_ic_league" translatesAutoresizingMaskIntoConstraints="NO" id="23r-K7-w72">
+                                <rect key="frame" x="16" y="15.5" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="NEs-Vl-HB9"/>
+                                    <constraint firstAttribute="width" secondItem="23r-K7-w72" secondAttribute="height" id="w50-9P-6Wm"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="Bùi Tấn Trường" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bd7-Zq-ZxY">
+                                <rect key="frame" x="64" y="15.5" width="292" height="20"/>
+                                <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="16"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MID" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MAp-yc-kKA">
+                                <rect key="frame" x="64" y="38.5" width="21" height="14.5"/>
+                                <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="12"/>
+                                <color key="textColor" red="0.53725490196078429" green="0.53725490196078429" blue="0.58431372549019611" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pp3-WS-Jag">
+                                <rect key="frame" x="366" y="19.5" width="32" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Pp3-WS-Jag" secondAttribute="height" id="BfS-ho-iwf"/>
+                                    <constraint firstAttribute="width" constant="32" id="dgd-fz-l61"/>
+                                </constraints>
+                                <state key="normal" image="global_ic_add_transfer"/>
+                                <connections>
+                                    <action selector="onClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="zYH-fE-E8W"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="bd7-Zq-ZxY" firstAttribute="bottom" secondItem="23r-K7-w72" secondAttribute="centerY" id="0da-zS-3dN"/>
+                            <constraint firstItem="bd7-Zq-ZxY" firstAttribute="leading" secondItem="23r-K7-w72" secondAttribute="trailing" constant="8" id="4SP-Cr-7Tz"/>
+                            <constraint firstItem="Pp3-WS-Jag" firstAttribute="leading" secondItem="bd7-Zq-ZxY" secondAttribute="trailing" constant="10" id="Ln4-Bu-znW"/>
+                            <constraint firstItem="Pp3-WS-Jag" firstAttribute="centerY" secondItem="4Ks-Cd-INU" secondAttribute="centerY" id="WHS-Vz-RL6"/>
+                            <constraint firstItem="MAp-yc-kKA" firstAttribute="top" secondItem="bd7-Zq-ZxY" secondAttribute="bottom" constant="3" id="aBk-Ki-FOT"/>
+                            <constraint firstItem="23r-K7-w72" firstAttribute="leading" secondItem="4Ks-Cd-INU" secondAttribute="leading" constant="16" id="cHk-qx-NAB"/>
+                            <constraint firstItem="23r-K7-w72" firstAttribute="centerY" secondItem="4Ks-Cd-INU" secondAttribute="centerY" id="iE6-lx-9wA"/>
+                            <constraint firstAttribute="trailing" secondItem="Pp3-WS-Jag" secondAttribute="trailing" constant="16" id="nbp-tx-a4J"/>
+                            <constraint firstItem="MAp-yc-kKA" firstAttribute="leading" secondItem="bd7-Zq-ZxY" secondAttribute="leading" id="pJu-h9-qQq"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="4Ks-Cd-INU" secondAttribute="bottom" constant="1" id="5hr-Ix-X9x"/>
+                    <constraint firstItem="4Ks-Cd-INU" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="7qS-aU-fjX"/>
+                    <constraint firstItem="4Ks-Cd-INU" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="ZR5-fh-ktG"/>
+                    <constraint firstItem="4Ks-Cd-INU" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="jQY-Wx-07I"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="btnAdd" destination="Pp3-WS-Jag" id="UVv-Vk-NA9"/>
+                <outlet property="contentToBottomLayout" destination="5hr-Ix-X9x" id="ydj-w6-5p2"/>
+                <outlet property="ivIcon" destination="23r-K7-w72" id="SQK-wi-vui"/>
+                <outlet property="lblName" destination="bd7-Zq-ZxY" id="Vw9-Eg-XlJ"/>
+                <outlet property="lblPosition" destination="MAp-yc-kKA" id="Ve9-IK-gd9"/>
+                <outlet property="mainView" destination="4Ks-Cd-INU" id="lvg-s3-Wcs"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="71.651785714285708"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="global_ic_add_transfer" width="32" height="32"/>
+        <image name="newGlobal_ic_league" width="40" height="40"/>
+    </resources>
+</document>

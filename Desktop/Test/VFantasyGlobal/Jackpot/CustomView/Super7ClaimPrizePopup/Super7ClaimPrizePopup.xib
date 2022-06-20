@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro-Display-Bold.ttf">
+            <string>SFProDisplay-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="Super7ClaimPrizePopup" customModule="VFantasyJackpot" customModuleProvider="target">
+            <connections>
+                <outlet property="btnClaim" destination="c1f-HB-af9" id="dmf-YP-4Em"/>
+                <outlet property="emailTextField" destination="gZb-iK-G4q" id="fyc-sn-90u"/>
+                <outlet property="firstNameTextField" destination="vy3-2V-7NI" id="PVt-XM-Gwj"/>
+                <outlet property="lastNameTextField" destination="fOL-Dg-U04" id="XM1-4u-BpF"/>
+                <outlet property="phoneTextField" destination="xyP-6A-NQF" id="zhc-gO-Ad7"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="400"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fex-pY-nLs">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="281.5"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Claim the prize" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gLf-3K-kCB">
+                            <rect key="frame" x="16" y="24" width="382" height="21.5"/>
+                            <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="18"/>
+                            <color key="textColor" red="0.11764705882352941" green="0.14509803921568626" blue="0.22352941176470587" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="xibLocKey" value="Claim the prize"/>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vy3-2V-7NI" customClass="IBDCTextField" customModule="VFantasyJackpot" customModuleProvider="target">
+                            <rect key="frame" x="16" y="61.5" width="187" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="UuC-w0-ouD"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" textContentType="one-time-code"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="borderSize">
+                                    <real key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="_cornerRadius">
+                                    <real key="value" value="20"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="point" keyPath="textFieldInset">
+                                    <point key="value" x="10" y="0.0"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="activeBorderColor">
+                                    <color key="value" red="0.86666666670000003" green="0.84313725490000002" blue="0.91372549020000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="inactiveBorderColor">
+                                    <color key="value" red="0.86666666670000003" green="0.84313725490000002" blue="0.91372549020000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="activeBackgroundColor">
+                                    <color key="value" red="0.92941176469999998" green="0.91764705879999997" blue="0.96470588239999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="inactiveBackgroundColor">
+                                    <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </textField>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fOL-Dg-U04" customClass="IBDCTextField" customModule="VFantasyJackpot" customModuleProvider="target">
+                            <rect key="frame" x="211" y="61.5" width="187" height="40"/>
+                            <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" textContentType="one-time-code"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="borderSize">
+                                    <real key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="_cornerRadius">
+                                    <real key="value" value="20"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="point" keyPath="textFieldInset">
+                                    <point key="value" x="10" y="0.0"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="activeBorderColor">
+                                    <color key="value" red="0.86666666670000003" green="0.84313725490000002" blue="0.91372549020000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="inactiveBorderColor">
+                                    <color key="value" red="0.86666666670000003" green="0.84313725490000002" blue="0.91372549020000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="activeBackgroundColor">
+                                    <color key="value" red="0.92941176469999998" green="0.91764705879999997" blue="0.96470588239999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="inactiveBackgroundColor">
+                                    <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </textField>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gZb-iK-G4q" customClass="IBDCTextField" customModule="VFantasyJackpot" customModuleProvider="target">
+                            <rect key="frame" x="16" y="117.5" width="382" height="40"/>
+                            <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" keyboardType="emailAddress" textContentType="one-time-code"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="borderSize">
+                                    <real key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="_cornerRadius">
+                                    <real key="value" value="20"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="point" keyPath="textFieldInset">
+                                    <point key="value" x="10" y="0.0"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="activeBorderColor">
+                                    <color key="value" red="0.86666666670000003" green="0.84313725490000002" blue="0.91372549020000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="inactiveBorderColor">
+                                    <color key="value" red="0.86666666670000003" green="0.84313725490000002" blue="0.91372549020000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="activeBackgroundColor">
+                                    <color key="value" red="0.92941176469999998" green="0.91764705879999997" blue="0.96470588239999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="inactiveBackgroundColor">
+                                    <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </textField>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xyP-6A-NQF" customClass="IBDCTextField" customModule="VFantasyJackpot" customModuleProvider="target">
+                            <rect key="frame" x="16" y="173.5" width="382" height="40"/>
+                            <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" keyboardType="emailAddress" textContentType="one-time-code"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="borderSize">
+                                    <real key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="_cornerRadius">
+                                    <real key="value" value="20"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="point" keyPath="textFieldInset">
+                                    <point key="value" x="10" y="0.0"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="activeBorderColor">
+                                    <color key="value" red="0.86666666670000003" green="0.84313725490000002" blue="0.91372549020000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="inactiveBorderColor">
+                                    <color key="value" red="0.86666666670000003" green="0.84313725490000002" blue="0.91372549020000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="activeBackgroundColor">
+                                    <color key="value" red="0.92941176469999998" green="0.91764705879999997" blue="0.96470588239999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="inactiveBackgroundColor">
+                                    <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </textField>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c1f-HB-af9" customClass="GradientButton" customModule="VFantasyJackpot" customModuleProvider="target">
+                            <rect key="frame" x="16" y="233.5" width="382" height="48"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="48" id="lsb-aY-9mz"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="fOL-Dg-U04" firstAttribute="height" secondItem="vy3-2V-7NI" secondAttribute="height" id="2ZO-VZ-qTs"/>
+                        <constraint firstItem="xyP-6A-NQF" firstAttribute="top" secondItem="gZb-iK-G4q" secondAttribute="bottom" constant="16" id="543-ed-5N2"/>
+                        <constraint firstItem="c1f-HB-af9" firstAttribute="centerX" secondItem="xyP-6A-NQF" secondAttribute="centerX" id="BKU-jF-W1B"/>
+                        <constraint firstItem="gLf-3K-kCB" firstAttribute="leading" secondItem="Fex-pY-nLs" secondAttribute="leading" constant="16" id="BYR-nV-Ydw"/>
+                        <constraint firstItem="gZb-iK-G4q" firstAttribute="centerX" secondItem="Fex-pY-nLs" secondAttribute="centerX" id="Fl4-bG-rvK"/>
+                        <constraint firstItem="c1f-HB-af9" firstAttribute="leading" secondItem="xyP-6A-NQF" secondAttribute="leading" id="GdY-8x-shr"/>
+                        <constraint firstItem="gZb-iK-G4q" firstAttribute="top" secondItem="vy3-2V-7NI" secondAttribute="bottom" constant="16" id="HQw-Od-n8y"/>
+                        <constraint firstItem="xyP-6A-NQF" firstAttribute="centerX" secondItem="gZb-iK-G4q" secondAttribute="centerX" id="KjF-BW-eFE"/>
+                        <constraint firstItem="xyP-6A-NQF" firstAttribute="leading" secondItem="gZb-iK-G4q" secondAttribute="leading" id="eEz-yP-jXt"/>
+                        <constraint firstItem="fOL-Dg-U04" firstAttribute="width" secondItem="vy3-2V-7NI" secondAttribute="width" id="eLs-0f-ZuC"/>
+                        <constraint firstItem="gLf-3K-kCB" firstAttribute="top" secondItem="Fex-pY-nLs" secondAttribute="top" constant="24" id="hqj-vN-qQe"/>
+                        <constraint firstItem="gZb-iK-G4q" firstAttribute="leading" secondItem="vy3-2V-7NI" secondAttribute="leading" id="jyo-xJ-Fb6"/>
+                        <constraint firstItem="fOL-Dg-U04" firstAttribute="centerY" secondItem="vy3-2V-7NI" secondAttribute="centerY" id="kHo-Te-9Cc"/>
+                        <constraint firstItem="c1f-HB-af9" firstAttribute="top" secondItem="xyP-6A-NQF" secondAttribute="bottom" constant="20" id="mZ4-LG-fMd"/>
+                        <constraint firstItem="vy3-2V-7NI" firstAttribute="top" secondItem="gLf-3K-kCB" secondAttribute="bottom" constant="16" id="mbc-hp-QfX"/>
+                        <constraint firstItem="gZb-iK-G4q" firstAttribute="height" secondItem="vy3-2V-7NI" secondAttribute="height" id="n0P-QC-Bxo"/>
+                        <constraint firstAttribute="trailing" secondItem="fOL-Dg-U04" secondAttribute="trailing" constant="16" id="nMQ-7g-9rW"/>
+                        <constraint firstItem="vy3-2V-7NI" firstAttribute="leading" secondItem="gLf-3K-kCB" secondAttribute="leading" id="oxt-dx-42J"/>
+                        <constraint firstItem="fOL-Dg-U04" firstAttribute="leading" secondItem="vy3-2V-7NI" secondAttribute="trailing" constant="8" id="p5E-WC-JrR"/>
+                        <constraint firstItem="xyP-6A-NQF" firstAttribute="height" secondItem="gZb-iK-G4q" secondAttribute="height" id="qtk-iZ-KpA"/>
+                        <constraint firstAttribute="bottom" secondItem="c1f-HB-af9" secondAttribute="bottom" id="yZt-ne-sGM"/>
+                        <constraint firstItem="gLf-3K-kCB" firstAttribute="centerX" secondItem="Fex-pY-nLs" secondAttribute="centerX" id="ydG-6n-exX"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="Fex-pY-nLs" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="A2E-ba-bgw"/>
+                <constraint firstItem="Fex-pY-nLs" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="ffq-w2-Odb"/>
+                <constraint firstItem="Fex-pY-nLs" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="jG4-wd-A1j"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="131.8840579710145" y="145.98214285714286"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="fOL-Dg-U04">
+            <size key="intrinsicContentSize" width="3" height="18.5"/>
+        </designable>
+        <designable name="gZb-iK-G4q">
+            <size key="intrinsicContentSize" width="3" height="18.5"/>
+        </designable>
+        <designable name="vy3-2V-7NI">
+            <size key="intrinsicContentSize" width="3" height="18.5"/>
+        </designable>
+        <designable name="xyP-6A-NQF">
+            <size key="intrinsicContentSize" width="3" height="18.5"/>
+        </designable>
+    </designables>
+</document>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro-Display-Regular.ttf">
+            <string>SFProDisplay-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="RankingViewHeader" id="iN0-l3-epB" customClass="RankingViewHeader" customModule="PAN689" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="26"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_bgr_leagures" translatesAutoresizingMaskIntoConstraints="NO" id="jjq-WQ-LbP">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="26"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="#" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l3c-gj-2ni">
+                    <rect key="frame" x="27" y="0.0" width="36" height="26"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="36" id="KCB-pe-Jff"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="TEAM" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dad-BT-eJf">
+                    <rect key="frame" x="78" y="0.0" width="31.5" height="26"/>
+                    <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="12"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="TOTAL PTS" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z1d-SG-emk">
+                    <rect key="frame" x="301" y="0.0" width="58" height="26"/>
+                    <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="12"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <constraints>
+                <constraint firstItem="jjq-WQ-LbP" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="6bQ-53-pVO"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="jjq-WQ-LbP" secondAttribute="trailing" id="BdV-8P-tod"/>
+                <constraint firstItem="l3c-gj-2ni" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="DL4-6x-HNF"/>
+                <constraint firstItem="z1d-SG-emk" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="EcB-FU-d82"/>
+                <constraint firstItem="Dad-BT-eJf" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="HHp-Ra-8Ij"/>
+                <constraint firstAttribute="bottom" secondItem="jjq-WQ-LbP" secondAttribute="bottom" id="KKs-vb-WZS"/>
+                <constraint firstItem="z1d-SG-emk" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="Kkz-cM-fox"/>
+                <constraint firstAttribute="bottom" secondItem="l3c-gj-2ni" secondAttribute="bottom" id="TJu-iK-Scb"/>
+                <constraint firstItem="jjq-WQ-LbP" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="WaI-fI-7EK"/>
+                <constraint firstItem="l3c-gj-2ni" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="27" id="Xf0-h6-eIe"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="z1d-SG-emk" secondAttribute="trailing" constant="16" id="e8o-Am-w7s"/>
+                <constraint firstItem="Dad-BT-eJf" firstAttribute="leading" secondItem="l3c-gj-2ni" secondAttribute="trailing" constant="15" id="hiH-na-85u"/>
+                <constraint firstItem="Dad-BT-eJf" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="mZu-Gf-SUs"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="teamLabel" destination="Dad-BT-eJf" id="5pK-Gp-dfM"/>
+                <outlet property="totalPointLabel" destination="z1d-SG-emk" id="xFM-IB-Q9M"/>
+            </connections>
+            <point key="canvasLocation" x="-33.5" y="-208"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_bgr_leagures" width="320" height="40"/>
+    </resources>
+</document>

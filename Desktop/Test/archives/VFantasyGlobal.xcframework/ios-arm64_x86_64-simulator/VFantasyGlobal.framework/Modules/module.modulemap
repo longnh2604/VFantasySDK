@@ -1,0 +1,11 @@
+framework module VFantasyGlobal {
+  umbrella header "VFantasyGlobal.h"
+
+  export *
+  module * { export * }
+}
+
+module VFantasyGlobal.Swift {
+    header "VFantasyGlobal-Swift.h"
+    requires objc
+}
